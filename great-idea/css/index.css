@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* Main Structure Styling */
+
 body {
 	width: 88%;
 	margin: 2% auto;
@@ -72,12 +74,14 @@ body {
 
 nav {
 	display: flex;
+	padding-top: .5%;
 }
 
 .navbar {
 	display:flex;
 	width: 100%;
 	justify-content: space-between;
+	padding-bottom: 3%;
 }
 
 nav a {
@@ -96,7 +100,7 @@ h1 {
 hr {
 	display: block;
 	border: 1px solid grey;
-	margin: 5% auto;
+	margin: 3% auto;
 }
 
 footer {
@@ -110,7 +114,7 @@ address {
 
 h2 {
 	
-	font-size: 24px;
+	font-size: 26px;
 }
 
 h3 {
@@ -122,6 +126,20 @@ h3 {
 	padding: 10px 25px 10px 25px;
 }
 
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 100;
+	border: 1px solid rgb(78, 78, 78);
+	border-radius: 25px;
+	width: 25%;
+	padding:1%;
+	text-align: center;
+}
+
 h6 {
 	text-align: center;
 }
@@ -130,6 +148,14 @@ p {
 	font-size: 21px;
 }
 
+li {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+/* Home Page Styling Below */
+
+/* Welcome Banner */
 .welcome {
 	display: flex;
 	justify-content: space-evenly;
@@ -141,17 +167,20 @@ p {
 	padding-top: 3%;
 }
 
+/* About & Services */
 .introduction {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 2%;
 }
 
+/* Middle Image Break */
 .middle-img {
 	width: 100%;
 	margin-bottom: 2%;
 }
 
+/* Products, Vision & Details */
 .details {
 	display: flex;
 	width: 100%;
@@ -160,4 +189,68 @@ p {
 .details div{
 	justify-content: space-between;
 	padding: 1%;
+}
+
+/* Services Page Styling */
+
+.service-welcome {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.service-para {
+	padding-top: 2%;
+}
+
+img {
+	width:100%;
+}
+
+.service-container {
+	display: flex;
+	flex-flow: row wrap;
+	width:100%;
+}
+
+.service-container .service-box{
+	justify-content: space-between;
+	width: 48%;
+	margin: 1%;
+	padding: 2%;
+}
+
+.service-box {
+	background-color: rgb(223, 223, 223);
+	border: 3px solid rgb(70, 70, 70);
+}
+
+
+.service-box p{
+	padding-bottom: 4%;
+}
+
+.about-services{
+	display: flex;
+	width: 100%;
+	margin-bottom: 6%;
+}
+
+.about-services div {
+	justify-content: space-between;
+	margin: 1%;
+}
+
+.facts-box {
+	width: 50%;
+}
+
+.facts-box li{
+	font-size: 16px;
+	line-height: 150%;
+	padding: 4% 0 0 2%;
+}
+
+.facts-img {
+	width:50%;
 }
