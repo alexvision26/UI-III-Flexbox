@@ -155,6 +155,15 @@ li {
 
 /* Home Page Styling Below */
 
+.anchor:hover {
+	text-decoration: underline;
+	color: orange;
+}
+
+.anchor:active {
+	color: yellow;
+}
+
 /* Welcome Banner */
 .welcome {
 	display: flex;
